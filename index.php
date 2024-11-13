@@ -15,27 +15,21 @@ include 'links/link.php';
 
 <body>
 <header class="p-3" style="background-color: #C7A98B;">
-    <div class="container">
-        <div class="topnav">
-            <a href="index.php" class="active">
-                <img src="image/cat-ชานมไข่มุก.gif" alt="Cat Drinking Milk Tea GIF" width="50" height="42">
-            </a>
+<div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="index.php" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="image/cat-ชานมไข่มุก.gif" alt="Cat Drinking Milk Tea GIF" width="50" height="42">
+                </a>
 
-
-            <div id="myLinks">
-                <a href="index.php" class="nav-link text-secondary fw-bold">หน้าแรก</a>
-                <a href="type.php" class="nav-link text-black fw-bold">ประเภท</a>
-                <a href="Diversity.php" class="nav-link text-black fw-bold">ความหลากหลาย</a>
-                <a href="history.php" class="nav-link text-black fw-bold">ประวัติศาสตร์</a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.php" class="nav-link px-2 text-secondary fw-bold">หน้าแรก</a></li>
+                    <li><a href="type.php" class="nav-link px-2 text-black fw-bold">ประเภท</a></li>
+                    <li><a href="Diversity.php" class="nav-link px-2 text-black fw-bold">ความหลากหลาย</a></li>
+                    <li><a href="history.php" class="nav-link px-2 text-black fw-bold">ประวัติศาสตร์</a></li>
+                </ul>
             </div>
-
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
         </div>
-    </div>
 </header>
-
 
   <main>
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
@@ -128,16 +122,6 @@ include 'links/link.php';
 
   </main>
   <Script src="script.js"></Script>
-  <script>
-    function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
-</script>
 </body>
 
 </html>
